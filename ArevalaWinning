@@ -129,7 +129,8 @@ local mouse = player:GetMouse()
 
 --Properties:
 mouse.KeyDown:connect(function(key)
-if key == "t" then
+  if key == "t" then
+
    
     local AnimationTracks = humanoid:GetPlayingAnimationTracks()
 
@@ -137,6 +138,9 @@ if key == "t" then
 for i, track in pairs (AnimationTracks) do
     track:Stop()
 end
+
+    end
+end)
 
 
 ScreenGui.Parent = game.CoreGui
@@ -149,7 +153,7 @@ ScrollingFrame.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
 ScrollingFrame.Position = UDim2.new(0, 68, 0, 319)
 ScrollingFrame.Size = UDim2.new(0, 120, 0, 195)
 ScrollingFrame.CanvasSize = UDim2.new(0, 0, 1, 200)
-print("384849383")
+
 Lean.Name = "Lean"
 Lean.Parent = ScrollingFrame
 Lean.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -165,7 +169,7 @@ anim.AnimationId = "http://www.roblox.com/asset/?id=3152375249"
    playAnim:Play()
 
 end)
-print("49393848")
+
 Dance2.Name = "Dance2"
 Dance2.Parent = ScrollingFrame
 Dance2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -182,7 +186,7 @@ anim.AnimationId = "http://www.roblox.com/asset/?id=3189776546"
    playAnim:Play()
 
 end)
-print("49948485")
+
 Dance1.Name = "Dance1"
 Dance1.Parent = ScrollingFrame
 Dance1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
